@@ -2,41 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Apexoraz | Mindful Philosophy</title>
+  <title>Apexoraz | Philosophy in Motion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background: #121212;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
       color: #f0f0f0;
-      line-height: 1.6;
-    }
-    header, footer {
       text-align: center;
-      padding: 50px 20px;
     }
-    header {
-      background: #1e1e1e;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 60px 20px;
     }
+
     h1 {
       font-size: 3em;
       margin-bottom: 0.2em;
     }
+
     h2 {
       font-size: 2em;
       margin-top: 1.5em;
     }
+
     p {
       max-width: 700px;
       margin: 10px auto;
       font-size: 1.1em;
       color: #ccc;
     }
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
+
     .button {
       background-color: #f0c330;
       color: #121212;
@@ -46,18 +46,103 @@
       display: inline-block;
       margin-top: 20px;
     }
+
     .button:hover {
       background-color: #e0b000;
     }
+
+    iframe {
+      width: 90%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      margin-top: 30px;
+    }
+
+    form {
+      margin-top: 40px;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      width: 250px;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #f0c330;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e0b000;
+    }
+
     footer {
+      margin-top: 4em;
       font-size: 0.9em;
-      color: #777;
+      color: #888;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #ddd;
+      font-size: 1.3em;
+      margin: 20px auto;
+      max-width: 800px;
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="overlay">
     <h1>Apexoraz</h1>
-    <p>“Every man takes the limits of his own field of vision for the limits of the world.” – Schopenhauer</p>
-    <a class="button" href="h
+    <div class="quote" id="quote">“Loading quote...”</div>
+    <a class="button" href="https://www.youtube.com/@Apexoraz" target="_blank">📺 Subscribe on YouTube</a>
+
+    <section>
+      <h2>Featured Video</h2>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+      <!-- Replace VIDEO_ID with your actual video ID -->
+    </section>
+
+    <section>
+      <h2>About Apexoraz</h2>
+      <p>Apexoraz is more than a name — it's a mindset. A reflective haven for those who seek wisdom, clarity, and meaning in a chaotic world. Here, ancient thought meets modern mind.</p>
+    </section>
+
+    <section>
+      <h2>My Vision</h2>
+      <p>Inspired by Schopenhauer and timeless philosophy, Apexoraz is a journey inward. A sanctuary for solitude, truth, and unapologetic authenticity — a quiet rebellion against surface living.</p>
+    </section>
+
+    <section>
+      <h2>Get New Insights by Email</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="submit" value="Subscribe">
+      </form>
+      <p style="font-size: 0.9em; color: #888;">We respect your time and inbox.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Apexoraz · Philosophy for those who feel too deeply</p>
+    </footer>
+  </div>
+
+  <script>
+    const quotes = [
+      "“A man can be himself only so long as he is alone.”",
+      "“Compassion is the basis of morality.”",
+      "“Every man takes the limits of his own field of vision for the limits of the world.”",
+      "“Talent hits a target no one else can hit; genius hits a target no one else can see.”",
+      "“Mostly it is loss which teaches us about the worth of things.”"
+    ];
+    document.getElementById("quote").textContent = quotes[Math.floor(Math.random() * quotes.length)];
+  </script>
+</body>
+</html>
