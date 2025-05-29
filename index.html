@@ -92,6 +92,36 @@
       background: #1a1a1a;
     }
   </style>
+  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1e1e1e;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #f0c330;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </head>
 <body>
   <header>
@@ -104,10 +134,16 @@
     <a href="#book">Book</a>
     <a href="#video">Video</a>
     <a href="#podcast">Podcast</a>
+<div class="dropdown">
+  <a href="#">Topics ▾</a>
+  <div class="dropdown-content">
     <a href="philosophy.html">Philosophy</a>
     <a href="psychology.html">Psychology</a>
     <a href="success.html">Success</a>
     <a href="lifehacks.html">Life Hacks</a>
+  </div>
+</div>
+
     <a href="#consulting">Consulting</a>
     <a href="#subscribe">Subscribe</a>
   </nav>
