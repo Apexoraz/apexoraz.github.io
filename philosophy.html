@@ -1,114 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Philosophy | Apexoraz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #121212;
-      color: #f4f4f4;
-      padding: 40px;
-      text-align: center;
-    }
-    a {
-      color: #f0c330;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
-    p.description {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: auto;
-    }
-    .grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 40px;
-    }
-    .philosopher-card {
-      background: #1e1e1e;
-      border-radius: 8px;
-      overflow: hidden;
-      width: 200px;
-      height: 330px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.2s;
-    }
-    .philosopher-card:hover {
-      transform: scale(1.05);
-    }
-    .philosopher-card img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-    }
-    .philosopher-card p {
-      padding: 12px;
-      margin: 0;
-    }
-  </style>
-</head>
-<body>
-  <h1>Philosophy</h1>
-  <p class="description">Explore timeless ideas, thinkers, and reflections that challenge how we see reality, self, and freedom. Click a philosopher below to explore their legacy.</p>
+<section class="philosophy-cards">
+  <h2>Philosophy</h2>
+  <p>Explore timeless ideas, thinkers, and reflections that challenge how we see reality, self, and freedom. Click a philosopher below to explore their legacy.</p>
+  <div class="card-container">
 
-  <section id="philosophers">
-    <div class="grid">
-      <a href="nietzsche.html" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Nietzsche187a.jpg" alt="Nietzsche">
-        <p>Friedrich Nietzsche</p>
-      </a>
-      <a href="schopenhauer.html" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Arthur_Schopenhauer_by_J_Sch%C3%A4fer%2C_1859b.jpg" alt="Schopenhauer">
-        <p>Arthur Schopenhauer</p>
-      </a>
-      <a href="heidegger.html" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Heidegger_und_Arendt.jpg" alt="Heidegger">
-        <p>Martin Heidegger</p>
-      </a>
-      <a href="#" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Kierkegaard.jpg" alt="Kierkegaard">
-        <p>Søren Kierkegaard</p>
-      </a>
-      <a href="#" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Jean_Paul_Sartre_1967.jpg" alt="Sartre">
-        <p>Jean-Paul Sartre</p>
-      </a>
-      <a href="#" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Simone_de_Beauvoir_1945.jpg" alt="Beauvoir">
-        <p>Simone de Beauvoir</p>
-      </a>
-      <a href="#" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Albert_Camus%2C_gagnant_de_prix_Nobel%2C_portrait_en_buste%2C_posant_en_exterieur%2C_face_a_gauche%2C_cigarette.jpg" alt="Camus">
-        <p>Albert Camus</p>
-      </a>
-      <a href="#" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Immanuel_Kant_%28painted_portrait%29.jpg" alt="Kant">
-        <p>Immanuel Kant</p>
-      </a>
-      <a href="#" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Plato_Silanion_Musei_Capitolini_MC1377.jpg" alt="Plato">
-        <p>Plato</p>
-      </a>
-      <a href="#" class="philosopher-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Aristotle_Altemps_Inv8575.jpg" alt="Aristotle">
-        <p>Aristotle</p>
-      </a>
-    </div>
-  </section>
+    <!-- Nietzsche -->
+    <a href="nietzsche.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Nietzsche187a.jpg/440px-Nietzsche187a.jpg" alt="Nietzsche">
+      <p>Friedrich Nietzsche</p>
+    </a>
 
-  <p style="margin-top: 40px;"><a href="index.html">← Back to Home</a></p>
-</body>
-</html>
+    <!-- Schopenhauer -->
+    <a href="schopenhauer.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Arthur_Schopenhauer_Portrait.jpg/440px-Arthur_Schopenhauer_Portrait.jpg" alt="Schopenhauer">
+      <p>Arthur Schopenhauer</p>
+    </a>
+
+    <!-- Kant -->
+    <a href="kant.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Immanuel_Kant_%28painted_portrait%29.jpg/440px-Immanuel_Kant_%28painted_portrait%29.jpg" alt="Kant">
+      <p>Immanuel Kant</p>
+    </a>
+
+    <!-- Plato -->
+    <a href="plato.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Plato_Silanion_Musei_Capitolini_MC1377.jpg/440px-Plato_Silanion_Musei_Capitolini_MC1377.jpg" alt="Plato">
+      <p>Plato</p>
+    </a>
+
+    <!-- Heidegger -->
+    <a href="heidegger.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Heidegger.jpg/440px-Heidegger.jpg" alt="Heidegger">
+      <p>Martin Heidegger</p>
+    </a>
+
+    <!-- Vedanta -->
+    <a href="vedanta.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Adi_Shankaracharya.jpg/440px-Adi_Shankaracharya.jpg" alt="Vedanta Sage">
+      <p>Vedanta</p>
+    </a>
+
+    <!-- Spinoza -->
+    <a href="spinoza.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Spinoza.jpg/440px-Spinoza.jpg" alt="Spinoza">
+      <p>Baruch Spinoza</p>
+    </a>
+
+    <!-- Hume -->
+    <a href="hume.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/David_Hume.jpg/440px-David_Hume.jpg" alt="Hume">
+      <p>David Hume</p>
+    </a>
+
+    <!-- Bruno -->
+    <a href="bruno.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Giordano_Bruno.jpg/440px-Giordano_Bruno.jpg" alt="Bruno">
+      <p>Giordano Bruno</p>
+    </a>
+
+    <!-- Marcus Aurelius -->
+    <a href="aurelius.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Marcus_Aurelius_Glyptothek_Munich_337.jpg/440px-Marcus_Aurelius_Glyptothek_Munich_337.jpg" alt="Marcus Aurelius">
+      <p>Marcus Aurelius</p>
+    </a>
+
+    <!-- The Stoics -->
+    <a href="stoics.html" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Greek_philosophers.jpg/440px-Greek_philosophers.jpg" alt="The Stoics">
+      <p>The Stoics</p>
+    </a>
+
+  </div>
+  <p><a href="index.html">← Back to Home</a></p>
+</section>
