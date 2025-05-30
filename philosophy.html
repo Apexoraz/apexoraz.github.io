@@ -19,11 +19,64 @@
     a:hover {
       text-decoration: underline;
     }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    p.description {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: auto;
+    }
+    .grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .philosopher-card {
+      background: #1e1e1e;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+      transition: transform 0.2s;
+    }
+    .philosopher-card:hover {
+      transform: scale(1.05);
+    }
+    .philosopher-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+    .philosopher-card p {
+      padding: 12px;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
   <h1>Philosophy</h1>
-  <p>Explore timeless ideas, thinkers, and reflections that challenge how we see reality, self, and freedom.</p>
-  <p><a href="index.html">← Back to Home</a></p>
+  <p class="description">Explore timeless ideas, thinkers, and reflections that challenge how we see reality, self, and freedom. Click a philosopher below to explore their legacy.</p>
+
+  <section id="philosophers">
+    <div class="grid">
+      <a href="nietzsche.html" class="philosopher-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Nietzsche187a.jpg" alt="Nietzsche">
+        <p>Friedrich Nietzsche</p>
+      </a>
+      <a href="schopenhauer.html" class="philosopher-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Arthur_Schopenhauer_Portrait.jpg/800px-Arthur_Schopenhauer_Portrait.jpg" alt="Schopenhauer">
+        <p>Arthur Schopenhauer</p>
+      </a>
+      <a href="heidegger.html" class="philosopher-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Martin_Heidegger_1960.jpg" alt="Heidegger">
+        <p>Martin Heidegger</p>
+      </a>
+    </div>
+  </section>
+
+  <p style="margin-top: 40px;"><a href="index.html">← Back to Home</a></p>
 </body>
 </html>
