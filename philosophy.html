@@ -3,59 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Philosophy | Apexoraz</title>
+  <title>Philosophy - Apexoraz</title>
   <style>
     body {
       background-color: #111;
       color: #fff;
       font-family: 'Georgia', serif;
-      margin: 0;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
     }
 
-    h2 {
-      font-size: 3rem;
+    h1 {
+      font-size: 2.5rem;
+      color: #fff;
       margin-bottom: 10px;
     }
 
     p {
       font-size: 1.1rem;
-      max-width: 800px;
-      margin: 0 auto 40px;
+      color: #ccc;
+      margin-bottom: 40px;
     }
 
-    .card-container {
+    .philosopher-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .card {
-      background: #1a1a1a;
+    .philosopher {
+      background-color: #1a1a1a;
+      padding: 15px;
       border-radius: 8px;
-      padding: 10px;
-      text-align: center;
-      width: 160px;
-      transition: transform 0.2s;
-      text-decoration: none;
+      width: 180px;
+      transition: transform 0.3s ease;
     }
 
-    .card:hover {
+    .philosopher:hover {
       transform: scale(1.05);
     }
 
-    .card img {
+    .philosopher img {
       width: 100%;
-      height: auto;
-      border-radius: 6px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 5px;
     }
 
-    .card p {
-      color: gold;
-      font-weight: bold;
+    .philosopher-name {
       margin-top: 10px;
+      color: gold;
+      font-size: 1rem;
     }
 
     a {
@@ -66,59 +67,64 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .back {
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <h2>Philosophy</h2>
-  <p>Explore timeless ideas, thinkers, and reflections that challenge how we see reality, self, and freedom. Click a philosopher below to explore their legacy.</p>
+  <h1>Philosophy</h1>
+  <p>
+    Explore timeless ideas, thinkers, and reflections that challenge how we see reality, self, and freedom.
+    Click a philosopher below to explore their legacy.
+  </p>
 
-  <div class="card-container">
-    <a href="nietzsche.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Nietzsche187a.jpg" alt="Nietzsche">
-      <p>Friedrich Nietzsche</p>
+  <div class="philosopher-grid">
+    <a href="#" class="philosopher">
+      <img src="Nietzschee.png" alt="Friedrich Nietzsche" />
+      <div class="philosopher-name">Friedrich Nietzsche</div>
     </a>
-    <a href="schopenhauer.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Arthur_Schopenhauer_Portrait.jpg" alt="Schopenhauer">
-      <p>Arthur Schopenhauer</p>
+    <a href="#" class="philosopher">
+      <img src="Schopenhauer.png" alt="Arthur Schopenhauer" />
+      <div class="philosopher-name">Arthur Schopenhauer</div>
     </a>
-    <a href="kant.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Immanuel_Kant_%28painted_portrait%29.jpg" alt="Kant">
-      <p>Immanuel Kant</p>
+    <a href="#" class="philosopher">
+      <img src="kant.png" alt="Immanuel Kant" />
+      <div class="philosopher-name">Immanuel Kant</div>
     </a>
-    <a href="plato.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Plato_Silanion_Musei_Capitolini_MC1377.jpg" alt="Plato">
-      <p>Plato</p>
+    <a href="#" class="philosopher">
+      <img src="Plato.png" alt="Plato" />
+      <div class="philosopher-name">Plato</div>
     </a>
-    <a href="heidegger.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Heidegger.jpg" alt="Heidegger">
-      <p>Martin Heidegger</p>
+    <a href="#" class="philosopher">
+      <img src="Vedanta.png" alt="Vedanta" />
+      <div class="philosopher-name">Vedanta</div>
     </a>
-    <a href="vedanta.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Adi_Shankaracharya.jpg" alt="Vedanta">
-      <p>Vedanta</p>
+    <a href="#" class="philosopher">
+      <img src="Spinoza.png" alt="Baruch Spinoza" />
+      <div class="philosopher-name">Baruch Spinoza</div>
     </a>
-    <a href="spinoza.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Spinoza.jpg" alt="Spinoza">
-      <p>Baruch Spinoza</p>
+    <a href="#" class="philosopher">
+      <img src="Hume.png" alt="David Hume" />
+      <div class="philosopher-name">David Hume</div>
     </a>
-    <a href="hume.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/David_Hume.jpg" alt="Hume">
-      <p>David Hume</p>
+    <a href="#" class="philosopher">
+      <img src="Bruno.png" alt="Giordano Bruno" />
+      <div class="philosopher-name">Giordano Bruno</div>
     </a>
-    <a href="bruno.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Giordano_Bruno.jpg" alt="Bruno">
-      <p>Giordano Bruno</p>
+    <a href="#" class="philosopher">
+      <img src="Marcus.png" alt="Marcus Aurelius" />
+      <div class="philosopher-name">Marcus Aurelius</div>
     </a>
-    <a href="aurelius.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Marcus_Aurelius_Glyptothek_Munich_337.jpg" alt="Marcus Aurelius">
-      <p>Marcus Aurelius</p>
-    </a>
-    <a href="stoics.html" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Greek_philosophers.jpg" alt="The Stoics">
-      <p>The Stoics</p>
+    <a href="#" class="philosopher">
+      <img src="Stoics.png" alt="The Stoics" />
+      <div class="philosopher-name">The Stoics</div>
     </a>
   </div>
 
-  <p><a href="index.html">&larr; Back to Home</a></p>
+  <div class="back">
+    <a href="index.html">&larr; Back to Home</a>
+  </div>
 </body>
 </html>
