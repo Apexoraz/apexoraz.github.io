@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Wisdom of Life - Apexoraz</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #111;
+      color: #f4e6be;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #000;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 2px solid #d4af37;
+    }
+    header h1 {
+      color: #fff;
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #1c1c1c;
+    }
+    nav a {
+      padding: 1rem;
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #333;
+    }
+    .tab-section {
+      display: none;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .tab-section.active {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Wisdom of Life</h1>
+    <p>Arthur Schopenhauer</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showTab('special')">Special Introduction</a>
+    <a href="#" onclick="showTab('intro')">Introduction</a>
+    <a href="#" onclick="showTab('main')">Main Sections</a>
+    <a href="#" onclick="showTab('essays')">Essays</a>
+  </nav>
+
+  <div id="special" class="tab-section active">
+    <h2>Special Introduction</h2>
+    <p>This is a philosophical compass for those navigating modern life. In Schopenhauer’s often dark realism, we find light—a raw honesty about suffering, desire, pride, and the deeper meaning of existence.</p>
+  </div>
+
+  <div id="intro" class="tab-section">
+    <h2>Introduction</h2>
+    <p>Written in the later period of Schopenhauer’s life, this book distills decades of metaphysical insight and lived experience into a guide on how to live with dignity, clarity, and inner peace.</p>
+  </div>
+
+  <div id="main" class="tab-section">
+    <h2>Main Sections</h2>
+    <ul>
+      <li>Division of the Subject</li>
+      <li>Personality, or What a Man Is</li>
+      <li>Property, or What a Man Has</li>
+      <li>Position, or a Man’s Place in the Estimation of Others
+        <ul>
+          <li>Reputation</li>
+          <li>Pride</li>
+          <li>Rank</li>
+          <li>Honor</li>
+          <li>Fame</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div id="essays" class="tab-section">
+    <h2>Essays</h2>
+    <ul>
+      <li>Sketch of a History of the Doctrine of the Ideal and Real</li>
+      <li>Fragments of the History of Philosophy
+        <ul>
+          <li>Pre-Socratic Philosophy</li>
+          <li>Socrates</li>
+          <li>Plato</li>
+          <li>Aristotle</li>
+          <li>Stoics</li>
+          <li>Neoplatonists</li>
+          <li>Gnostics</li>
+          <li>Scholasticism</li>
+          <li>Bacon of Verulam</li>
+          <li>Modern Philosophy</li>
+          <li>Kantian Philosophy</li>
+          <li>On Schopenhauer’s Philosophy</li>
+        </ul>
+      </li>
+      <li>On Philosophy and Its Method</li>
+      <li>Thing-in-itself vs. Phenomenon</li>
+      <li>Pantheism</li>
+      <li>On Ethics</li>
+      <li>On Death and Indestructibility</li>
+      <li>On Suicide</li>
+      <li>Doctrine of the Will-to-Live</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Apexoraz | All rights reserved</p>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-section');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
